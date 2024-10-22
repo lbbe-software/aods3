@@ -1,5 +1,4 @@
-splitbin <-
-function(formula, data, id = "idbin"){
+splitbin <- function(formula, data, id = "idbin"){
 
 	splitbin.w <- function(formula, data, id){
   	

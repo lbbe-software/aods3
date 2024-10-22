@@ -1,5 +1,4 @@
-varbin <-
-function(n, m, alpha = 0.05, R = 5000){
+varbin <- function(n, m, alpha = 0.05, R = 5000){
 	
 	dat <- data.frame(n = n, m = m)
 
