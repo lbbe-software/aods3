@@ -76,7 +76,7 @@ aodml <- function(formula, data, family = c("bb", "nb"),
     a <- (k - 1) * mu
     b <- (k - 1) * (1 - mu)
     if (log)
-      lbeta(a + m, b + n - m) - lbeta(a, b) + lchoose(n, m)
+      suppressWarnings(lbeta(a + m, b + n - m) - lbeta(a, b) + lchoose(n, m))
   }
   
   m.logL <- function(theta) {
@@ -98,7 +98,7 @@ aodml <- function(formula, data, family = c("bb", "nb"),
       l <- dbetabin(m = m, n = n, mu = mu, k = k, log = TRUE)
     
     if (fam == "nb")
-      l <- dnbinom(x = y, mu = mu, size = k, log = TRUE)
+      suppressWarnings(l <- dnbinom(x = y, mu = mu, size = k, log = TRUE))
     
     -sum(l)
     
