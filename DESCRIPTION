@@ -11,3 +11,4 @@ Suggests: boot, lme4
 Description: Provides functions to analyse overdispersed counts or proportions. These functions should be considered as complements to more sophisticated methods such as generalized estimating equations (GEE) or generalized linear mixed effect models (GLMM). aods3 is an S3 re-implementation of the deprecated S4 package aod.
 License: GPL (>= 2)
 Encoding: UTF-8
+URL: https://github.com/lbbe-software/aods3
