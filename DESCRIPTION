@@ -1,5 +1,5 @@
 Package: aods3
-Version: 0.5
+Version: 0.6
 Title: Analysis of Overdispersed Data using S3 Methods
 Authors@R: c(
    person("Matthieu", "Lesnoff", role = "aut", email = "matthieu.lesnoff@cirad.fr"),
